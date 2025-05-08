@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/icons8_home_45"
+        android:title="Home"
+        app:iconSize="35dp"/>
+
+    <item
+        android:id="@+id/nav_rides"
+        android:icon="@drawable/icons8_history_45"
+        android:title="My Rides"
+        app:iconSize="35dp"/>
+
+    <item
+        android:id="@+id/nav_wallet"
+        android:icon="@drawable/icons8_wallet_45"
+        android:title="Wallet"
+        app:iconSize="35dp"/>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/icons8_male_user_45"
+        android:title="Profile"
+        app:iconSize="35dp"/>
+
+</menu>

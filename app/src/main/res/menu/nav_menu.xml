@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_profile"
+          android:title="Profile"
+          android:icon="@drawable/icons8_male_user_45"/>
+
+    <item android:id="@+id/nav_wallet"
+          android:title="Wallet"
+          android:icon="@drawable/baseline_account_balance_wallet_24"/>
+
+    <item android:id="@+id/nav_history"
+          android:title="History"
+          android:icon="@drawable/icons8_history_45"/>
+
+    <item android:id="@+id/nav_notification"
+          android:title="Notification"
+          android:icon="@drawable/icons8_notification_50"/>
+
+    <item android:id="@+id/nav_settings"
+          android:title="Settings"
+          android:icon="@drawable/icons8_setting_50"/>
+
+    <item android:id="@+id/nav_help"
+          android:title="Help"
+          android:icon="@drawable/icons8_sos_48"/>
+
+    <item android:id="@+id/nav_referral"
+        android:title="Referral"
+        android:icon="@drawable/icons8_share_48"/>
+
+    <item android:id="@+id/nav_feedback"
+        android:title="Feedback"
+        android:icon="@drawable/icons8_feedback_40"/>
+
+    <item android:id="@+id/nav_About"
+        android:title="About"
+        android:icon="@drawable/icons8_about_48"/>
+</menu>

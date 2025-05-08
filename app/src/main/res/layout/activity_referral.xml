@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9392F3"
+    tools:context=".ReferralActivity">
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="30sp"
+        android:layout_height="25dp"
+        android:src="@drawable/icons8_left_arrow_48"
+        app:layout_constraintBottom_toTopOf="@+id/tv_heading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/refer_your_friends_nand_earn"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/gift_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/gift_icon"
+        android:src="@drawable/icons8_gift_94"
+        app:layout_constraintTop_toBottomOf="@id/tv_heading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Points -->
+    <TextView
+        android:id="@+id/tv_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_100"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/gift_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_loyalty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loyalty_points"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/tv_points"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_friends_get_100_points_on_sign_up_and_you_get_100_timespoints_too_every_time"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_loyalty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Referral Code Box -->
+    <LinearLayout
+        android:id="@+id/referral_code_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_referral_code"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:paddingEnd="10dp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/referralCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wxyacg123"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingEnd="20dp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/copyCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/copy_code"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingStart="10dp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <!-- Share Text -->
+    <TextView
+        android:id="@+id/tv_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share_your_referral_code_via"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/referral_code_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Social Media Icons -->
+    <LinearLayout
+        android:id="@+id/share_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tv_share"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/shareTelegram"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/telegram"
+            android:padding="8dp"
+            android:src="@drawable/icons8_telegram_logo_50"/>
+
+        <ImageView
+            android:id="@+id/shareWhatsApp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/whatsapp"
+            android:padding="8dp"
+            android:src="@drawable/icons8_whatsapp_logo_50"/>
+
+        <ImageView
+            android:id="@+id/shareFacebook"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/facebook"
+            android:padding="8dp"
+            android:src="@drawable/icons8_facebook_logo_50"/>
+
+        <ImageView
+            android:id="@+id/shareInstagram"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/instagram"
+            android:padding="8dp"
+            android:src="@drawable/icons8_instagram_logo_50"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

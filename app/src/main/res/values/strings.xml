@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MAD_Project</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="refer_your_friends_nand_earn">Refer your friends\nand Earn</string>
+    <string name="gift_icon">Gift Icon</string>
+    <string name="_100">100</string>
+    <string name="loyalty_points">Loyalty Points</string>
+    <string name="your_friends_get_100_points_on_sign_up_and_you_get_100_timespoints_too_every_time">Your friends get 100 Points on sign-up, and you get 100 TimesPoints too every time!</string>
+    <string name="your_referral_code">Your referral code</string>
+    <string name="wxyacg123">WXYACG123</string>
+    <string name="copy_code">Copy code</string>
+    <string name="share_your_referral_code_via">Share your Referral Code via</string>
+    <string name="telegram">Telegram</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="facebook">Facebook</string>
+    <string name="instagram">Instagram</string>
+    <string name="to">To</string>
+    <string name="menu">Menu</string>
+    <string name="where_are_you_going">Where are you going?</string>
+    <string name="from">From</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="_09_00_am">09:00 AM</string>
+    <string name="_01_30_pm">01:30 PM</string>
+    <string name="_4_00_pm">4:00 PM</string>
+    <string name="_11_00_pm">11:00 PM</string>
+    <string name="passengers">Passengers</string>
+    <string name="_2">2</string>
+    <string name="confirm">Confirm</string>
+</resources>

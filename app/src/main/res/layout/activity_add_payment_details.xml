@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9392F3"
+    tools:context=".AddPaymentDetails">
+
+    <!-- App Name Header -->
+
+    <!-- Section Title -->
+    <TextView
+        android:id="@+id/tvGoFlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:text="GoFlow"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAddPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add payment card"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvGoFlow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Terms Text -->
+    <TextView
+        android:id="@+id/tvTerms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="By adding card, I accept the Terms of Service\nand have read the Privacy policy"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvAddPayment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Logos Layout -->
+    <LinearLayout
+        android:id="@+id/logoRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTerms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Google Pay -->
+        <ImageView
+            android:id="@+id/googlepay"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="24dp"
+            android:contentDescription="Google Pay"
+            android:src="@drawable/icons8_google_pay_50" />
+
+        <!-- PhonePe -->
+        <ImageView
+            android:id="@+id/phonepe"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="24dp"
+            android:contentDescription="PhonePe"
+            android:src="@drawable/icons8_phone_pe_50" />
+
+        <!-- Paytm -->
+        <ImageView
+            android:id="@+id/paytmLogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="Paytm"
+            android:src="@drawable/icons8_paytm_50" />
+    </LinearLayout>
+
+    <!-- Scan Card Button -->
+    <Button
+        android:id="@+id/scanCardButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Scan card"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/logoRow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/confirmPaymentButton"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <!-- Confirm Button -->
+    <Button
+        android:id="@+id/confirmPaymentButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Confirm"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@color/green"
+        app:layout_constraintTop_toBottomOf="@id/logoRow"
+        app:layout_constraintStart_toEndOf="@id/scanCardButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.45" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
